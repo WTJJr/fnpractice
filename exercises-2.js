@@ -68,7 +68,10 @@ function rovarspraket(phrase){
 // ---------------------
 
 function reverse(string){
+	var strArray = [];
     for (var x=string.length-1; x>=0; x--) {
-    	
+    	strArray.push(string.charAt(x));
     }
-}
+    var totalString = strArray.join("");
+    return totalString;
+};
