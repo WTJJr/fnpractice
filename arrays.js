@@ -19,8 +19,36 @@ var instructors = [
 // ---------------------------
 // 1. Find largest number
 // ---------------------------
+// var findLargestNum = function (array) {    - my old code
+// 	var largestNumArray = array.slice();
+// 	for (var x = 0; x < array.length-1; x++) {
+// 		if (largestNumArray[x] >= largestNumArray[(x+1)]) {
+// 			 largestNumArray[(x+1)] = largestNumArray[x];
+// 		} else {
+// 			 largestNumArray[x]=largestNumArray[(x+1)];
+// 		}
+// 	}
+// 	return largestNumArray[(largestNumArray.length-1)];
+//} 
 
+// Code with Brit's help:
 
+var findLargestNum = function(array) {
+	var largest = 0;
+	for(var x = 0; x < array.length - 1; x++) {
+		var number = array[x];
+		if (number > largest) {
+			largest = number;
+		}
+	}
+	return largest;
+};
+
+/// ---------------
+/// 1b. "Destutter" an array.
+/* Write a function destutter(items) that takes an array of items and remove *sequential* duplicates but not all duplicates from the array. */
+/* For example, destutter([1,2,3,3,4,4,5,5,2,1,2,2]) would return [1,2,3,4,5,2,1,2]
+/// ----------------
 
 
 // ---------------------------
