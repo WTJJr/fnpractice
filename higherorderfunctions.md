@@ -106,6 +106,8 @@ You take an input array, you say how you want to transform all the items in the 
 ////////////////////////
 .reduce()
 ///////////////////////
+NOTE: reduce will return the output automatically.
+
 
 Types:
 	forEach [] --> undefined
@@ -146,3 +148,26 @@ words.reduce(function(a, b){
 	return a + " " + b;
 });
 --> "dogs unicorns puppies lunch"
+
+
+
+
+Other functions:
+
+//////////////
+.appendChild
+//////////////
+
+var board = document.querySelector("#board");
+var newHTML = "";
+for(var count = 0; count < answer.length; count++) {
+  newHTML += "<span>_</span>";
+};
+board.innerHTML = newHTML;
+
+// var board = document.querySelector("#board");
+// for(var count = 0; count < answer.length; count++) {
+//   var spanNode = document.createElement("span");
+//   spanNode.textContent = "_";
+//   board.appendChild(spanNode);
+// };)
