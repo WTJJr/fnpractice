@@ -72,12 +72,34 @@ longestString(strings);
 // 3. Find even numbers
 // ---------------------------
 
+var isEven = function (array) {
+	var evens = [];
+	for (var x=0; x<array.length ; x++) {
+		if (array[x] % 2 == 0) {
+			evens.push(array[x]);
+		}
+	}
+	var evenNumbers = evens.join(separator = ',');
+	return evenNumbers;
+};
 
+isEven(numbers);
 
 // ---------------------------
 // 4. Find odd numbers
 // ---------------------------
+var isOdd = function (array) {
+	var odds = [];
+	for (var x=0; x<array.length ; x++) {
+		if (array[x] % 2 !== 0) {
+			odds.push(array[x]);
+		}
+	}
+	var oddNumbers = odds.join(separator = ',');
+	return oddNumbers;
+};
 
+isOdd(numbers);
 
 // ---------------------------
 // 5. Find words that contain `is`
