@@ -44,19 +44,29 @@ var findLargestNum = function(array) {
 	return largest;
 };
 
+findLargestNum(numbers);
+
 /// ---------------
 /// 1b. "Destutter" an array.
 /* Write a function destutter(items) that takes an array of items and remove *sequential* duplicates but not all duplicates from the array. */
-/* For example, destutter([1,2,3,3,4,4,5,5,2,1,2,2]) would return [1,2,3,4,5,2,1,2]
+/* For example, destutter([1,2,3,3,4,4,5,5,2,1,2,2]) would return [1,2,3,4,5,2,1,2] */
 /// ----------------
 
 
 // ---------------------------
 // 2. Find longest string
 // ---------------------------
+var longestString = function (string) {
+	var longest = "";
+	for (var x=0; x<string.length; x++) {
+		if (string[x].length > longest.length) {
+			longest = string[x];
+		}
+	}
+	return longest;
+};
 
-
-
+longestString(strings);
 
 // ---------------------------
 // 3. Find even numbers
