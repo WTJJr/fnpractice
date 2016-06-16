@@ -171,3 +171,23 @@ board.innerHTML = newHTML;
 //   spanNode.textContent = "_";
 //   board.appendChild(spanNode);
 // };)
+
+
+
+How to decide which HOF I need:
+-Paring down the data? Filter.
+-Take a collection and aggregate/boil it down to a single answer? Reduce.
+-Loop over all the itens? forEach.
+	REMEMBER: Doesn't return a value unless you ask it to.
+-Are you trying to do something to every item in a collection and keep the output? Map.
+
+REMEMBER:
+Types:
+	forEach [] --> undefined
+	filter [] --> new []
+	map [] -->  new []
+	reduce [x] --> x   - takes the whole collection of items and boils it down to a single thing.
+
+items.map(function(object) {
+	return object.price;
+});
